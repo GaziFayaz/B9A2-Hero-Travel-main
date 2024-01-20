@@ -327,6 +327,105 @@ main{
     color: #5A5A5D;
 }
 
+.newsletter-section{
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    height: 422px;
+    margin-bottom: 100px;
+}
+
+.newsletter-text{
+    flex:1;
+    padding: 40px;
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+}
+
+.newsletter-title{
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.newsletter-desc{
+    color: #5A5A5D;
+    line-height: 162.5%;
+    margin-bottom: 24px;
+}
+
+hr{
+    margin-bottom: 24px;
+    background-color: rgba(19, 19, 24, 0.10);
+}
+
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.newsletter-form *{
+    width: 100%;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+}
+
+.newsletter-form ::placeholder{
+        color: rgba(19, 19, 24, 0.30);
+}
+
+.newsletter-btn{
+    background-color: #FF5400;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.newsletter-img{
+    width: 57%;
+    position: relative;
+}
+
+.newsletter-main-img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.newsletter-discount-block{
+    background-color: #FF5400;
+    color: white;
+    width: 324px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    position: absolute;
+    transform: rotate(-19.62deg) ;
+    transform-origin: left bottom;
+    right: -20px;
+    bottom: 0;
+}
+
+.travel-com{
+    font-size: 1.5rem;
+}
+
+.save-70{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+
 @media only screen and (max-width: 600px) {
     main{
         margin: 0 5%; 
@@ -487,6 +586,46 @@ main{
     .offerings-1>p, .offerings-2>p, .offerings-3>p{
         font-size: .875rem;
         line-height: 171%;
+    }
+
+    .newsletter-section{
+        flex-direction: column;
+        gap: 16px;
+        height: auto;
+        margin-bottom: 24px;
+    }
+
+    .newsletter-text{
+        flex:0;
+        padding: 24px
+    }
+
+    .newsletter-title{
+        font-size: 1.25rem;
+    }
+
+    .newsletter-desc{
+        font-size: .875rem;
+        line-height: 171%;
+    }
+
+    .newsletter-img{
+        width: 100%;
+    }
+
+    .newsletter-discount-block{
+        width: 214px;
+        height: 79px;
+        right: -18px;
+    }
+
+    .travel-com{
+        font-size: 1rem;
+    }
+    
+    .save-70{
+        font-size: 1.32rem;
+        font-weight: 800;
     }
 
 }
