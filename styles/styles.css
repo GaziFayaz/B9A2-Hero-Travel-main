@@ -249,6 +249,84 @@ main{
     width: calc(100%*(673/1170));
 }
 
+.choose-us-section{
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.choose-us-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.choose-us-desc{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-weight: 400;
+    line-height: 162.5%;
+    max-width: 40%;
+    margin-bottom: 48px;
+}
+
+.offerings{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    /* box-sizing: border-box; */
+}
+
+.offerings-1, .offerings-2, .offerings-3{
+    max-width: 48%;
+    height: 284px;
+    box-sizing: border-box;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 16px;
+    /* border: 2px solid red; */
+}
+
+.offerings-1{
+    background-color: rgba(251, 181, 99, 0.05);
+}
+
+.offerings-2{
+    background-color: rgba(41, 206, 246, 0.20);
+}
+
+.offerings-3{
+    background-color: rgba(233, 68, 68, 0.05);
+}
+
+.offerings-1>img, .offerings-2>img, .offerings-3>img{
+    padding-bottom: 24px;
+}
+
+.offerings-1-title, .offerings-2-title, .offerings-3-title{
+    padding-bottom: 16px;
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.offerings-1>p, .offerings-2>p, .offerings-3>p{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 162.5%;
+    color: #5A5A5D;
+}
+
 @media only screen and (max-width: 600px) {
     main{
         margin: 0 5%; 
@@ -367,6 +445,48 @@ main{
     .choose-dest-images img{
         width: 100%;
         aspect-ratio: 1 / .525;
+    }
+
+    .choose-us-section{
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .choose-us-title{
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    .choose-us-desc{
+        font-size: .875rem;
+        margin-bottom: 16px;
+    }
+
+    .offerings{
+        width:100%;
+        flex-direction: column;
+        flex-wrap: initial;
+        justify-content: center;
+        gap:16px;
+        /* border: 2px solid red; */
+    }
+
+    .offerings-1, .offerings-2, .offerings-3{
+        max-width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .offerings-1>img, .offerings-2>img, .offerings-3>img{
+        padding-bottom: 16px;
+    }
+
+    .offerings-1-title, .offerings-2-title, .offerings-3-title{
+        font-size: 1.25rem;
+    }
+
+    .offerings-1>p, .offerings-2>p, .offerings-3>p{
+        font-size: .875rem;
+        line-height: 171%;
     }
 
 }
