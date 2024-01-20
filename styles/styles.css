@@ -318,6 +318,10 @@ main{
         width:100%;
     }
 
+    .popular-title{
+        font-size: 1.25rem;
+    }
+
     .choose-dest-section{
         margin-bottom: 24px;
     }
