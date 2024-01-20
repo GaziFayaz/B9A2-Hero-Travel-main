@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
 
 *{
     margin: 0;
@@ -112,6 +112,12 @@ main{
     justify-content: space-between;
     /* align-items: center; */
     /* border: 2px solid red; */
+}
+
+.popular-tours-img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .popular-title{
@@ -355,7 +361,7 @@ main{
     margin-bottom: 24px;
 }
 
-hr{
+.newsletter-section hr{
     margin-bottom: 24px;
     background-color: rgba(19, 19, 24, 0.10);
 }
@@ -424,7 +430,69 @@ hr{
     font-weight: 800;
 }
 
+footer{
+    /* border: 2px solid red; */
+    height: 502px;
+    width: 100%;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.footer-elements{
+    height: 100%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-div{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.brand-icon{
+    height: 46.67px;
+}
+
+.brand-name{
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.orange-title{
+    color: #FF5400;
+
+}
+
+.footer-desc{
+    color: #5A5A5D;
+    text-align: center;
+    line-height: 162.5%;
+    margin-bottom: 32px;
+}
+
+.icons{
+    margin-bottom: 50px;
+}
+
+footer hr{
+    background-color: rgba(19, 19, 24, .05);
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.copyright{
+    text-align: center;
+    color: #131318;
+    font-weight: 300;
+}
 
 @media only screen and (max-width: 600px) {
     main{
@@ -628,4 +696,38 @@ hr{
         font-weight: 800;
     }
 
+    footer{
+        height: auto;
+        padding: 33px 0;
+    }
+
+    .footer-elements{
+        max-width: 80%;
+    }
+
+    .brand-div{
+        gap:10px;
+    }
+
+    .brand-icon{
+        height: 33.51px;
+    }
+
+    .brand-name{
+        font-size: 1.35rem;
+    }
+
+    .footer-desc{
+        font-size: .875rem;
+        line-height: 171.43%;
+        margin-bottom: 16px;
+    }
+
+    .icons{
+        margin-bottom: 24px;
+    }
+
+    footer hr{
+        margin-bottom: 24px;
+    }
 }
